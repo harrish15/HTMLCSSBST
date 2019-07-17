@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 5</title>
+        <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            border: none;    
+            }
+        div.container{
+            height: 900px;
+            width: 100%;
+            /* border: 2px groove black;
+            margin: 0px 0px 0px 0px; */
+            position: relative;
+            overflow: hidden;
+        }
+        div.B1,.B2,.B3,.B4,.B5,.B6{
+            height: 300px;
+            width: 50%;
+            /* border-width: 2px;
+            border-style: groove;
+            border-color: white; */
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+        div.B1 {
+            background-image: url('./img/dual-monitors-colourful-4k.jpg');
+        }
+        div.B1,.B3,.B5{
+            margin-left: 0px;
+        }
+        div.B1 div.left_shadow {
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            right:100%;
+            background-color:gray;            
+            opacity: 0.7;
+            transition:all 0.6s ease-in-out 0s;
+        }
+        div.left_shadow h2 {
+            color:white;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 140px;
+        }
+        div.B1:hover div.left_shadow {
+            right:0px;
+        }
+        div.B2 {
+            background-image: url('./img/photo-1500622944204-b135684e99fd.jpg');
+        }
+        div.B2 div.right_shadow {
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            left:100%;
+            background-color:gray;            
+            opacity: 0.7;
+            transition:all 0.6s ease-in-out 0s;
+        }
+        div.right_shadow h2 {
+            color:white;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 140px;
+        }
+        div.B2:hover div.right_shadow {
+            left:0px;
+        }
+        div.B3 {
+            background-image: url('./img/iStock-614507060.jpg');
+        }
+        div.B3 div.top_shadow {
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            bottom:300px;
+            background-color:gray;            
+            opacity: 0.7;
+            transition:all 0.6s ease-in-out 0s;
+        }
+        div.top_shadow h2 {
+            color:white;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 140px;
+        }
+        div.B3:hover div.top_shadow {
+            bottom:0px;
+        }
+        div.B4 {
+            background-image: url('./img/195929.jpg');
+        }
+        div.B4 div.bottom_shadow {
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            top:300px;
+            background-color:gray;            
+            opacity: 0.7;
+            transition:all 0.6s ease-in-out 0s;
+        }
+        div.bottom_shadow h2 {
+            color:white;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 140px;
+        }
+        div.B4:hover div.bottom_shadow {
+            top:0px;
+        }
+        div.B5 {
+            background-image: url('./img/Fall_Colors-2.jpg');
+        }
+        div.B5 div.def_shadow {
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            top:0px;
+            background-color:gray;            
+            opacity: 0.7;
+            transition:all 0.6s ease-in-out 0s;
+        }
+        div.def_shadow h2 {
+            color:white;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 140px;
+        }
+        div.B5:hover div.def_shadow {
+            top:300px;
+            /*Either use top:300px or display: none*/
+            /* display: none; */
+        }
+        div.B6 {
+            background-image: url('./img/44880.jpg');
+        }
+        div.B6 div.par_shadow {
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            top:250px;
+            background-color:gray;            
+            opacity: 0.7;
+            transition:all 0.6s ease-in-out 0s;
+        }
+        div.B6:hover div.par_shadow {
+            top:75px;
+        }
+        div.par_shadow h2 {
+            color:white;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class ="container">
+            <div class="B1">
+                <div class="left_shadow">
+                    <h2>Amazon</h2>
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">The Amazon rainforest also known in English as Amazonia or the Amazon Jungle, 
+                    is a moist broadleaf forest in the Amazon biome that covers most of the Amazon 
+                    basin of South America.The majority of the forest is contained within Brazil, 
+                    with 60% of the rainforest, followed by Peru with 13%, Colombia with 10%, and 
+                    with minor amounts in Venezuela, Ecuador, Bolivia, Guyana, Suriname and France (French Guiana). 
+                    States or departments in four nations contain "Amazonas" in their names.</p>
+                </div>
+            </div>
+            <div class="B2">
+                <div class="right_shadow">
+                    <h2>Plateau</h2>
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">In geology and physical geography, a plateau, also called a high plain or a 
+                        tableland, is an area of a highland, usually consisting of relatively flat 
+                        terrain, that is raised significantly above the surrounding area, often with 
+                        one or more sides with steep slopes. Plateaus can be formed by a number of 
+                        processes, including upwelling of volcanic magma, extrusion of lava, and 
+                        erosion by water and glaciers. Plateaus are classified according to their 
+                        surrounding environment as intermontane, piedmont, or continental.</p>
+                </div>
+            </div>
+            <div class="B3">
+                <div class="top_shadow">
+                    <h2>Sunrise</h2>
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Sunrise (or Sun up) is the moment when the upper limb of the Sun appears on the 
+                        horizon in the morning.[1] The term can also refer to the entire process of the 
+                        solar disk crossing the horizon and its accompanying atmospheric effects.</p>
+                </div>
+            </div>
+            <div class="B4">
+                <div class="bottom_shadow">
+                    <h2>Adventure</h2>
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"><ol type="1"><li>“Somewhere between the bottom of the climb and the summit is the answer to the mystery why we climb.” <b>-Greg Child</b></li>
+                            <li>“Never measure the height of a mountain until you reach the top. Then you will see how low it was.” <b>-Dag Hammerskjold</b></li></ol></p>
+                </div>
+            </div>
+            <div class="B5">
+                <div class="def_shadow">
+                    <h2>Fall</h2>
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Autumn, also known as fall in American English and sometimes in Canadian English, 
+                        is one of the four temperate seasons. Autumn marks the transition from summer to 
+                        winter, in September (Northern Hemisphere) or March (Southern Hemisphere), when 
+                        the duration of daylight becomes noticeably shorter and the temperature cools 
+                        considerably. One of its main features in temperate climates is the shedding of 
+                        leaves from deciduous trees.</p>
+                </div>
+            </div>
+            <div class="B6">
+                <div class="par_shadow">
+                    <h2>Aurora</h2>
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">An aurora (plural: auroras or aurorae), sometimes referred to as polar lights, 
+                        northern lights (aurora borealis), southern lights (aurora australis), is a natural 
+                        light display in the Earth's sky, predominantly seen in the high-latitude regions 
+                        (around the Arctic and Antarctic).
+                            Auroras are the result of disturbances in the magnetosphere caused by solar wind. 
+                            These disturbances are regularly strong enough to alter the trajectories of 
+                            charged particles in both solar wind and magnetospheric plasma. These particles, 
+                            mainly electrons and protons, precipitate into the upper atmosphere 
+                            (thermosphere/exosphere).</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
