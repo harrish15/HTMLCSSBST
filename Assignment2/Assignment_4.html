@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+        <style>
+            *{
+                background-color: black;
+            }
+        div.B1,.B2,.B3,.B4,.B5,.B6{
+            height: 260px;
+            width: 250px;
+            border-width: 6px;
+            border-style: groove;
+            border-color: white;
+            margin-top: 50px;
+            float: left;
+            position: relative;
+        }
+        div.B1,.B4{
+            margin-left: 250px;
+        }
+        div.H,.A,.R,.I,.S{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: red;            
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-delay: 0s;
+            position: relative;
+        }
+        div.H{
+        animation-name:H;
+        }
+        @keyframes H {
+        0% {top:0px;left:50px;}
+        20%{top:250px;left:50px;background-color:orchid}
+        40%{top:125px;left:50px;background-color:royalblue}
+        60%{top:125px;left:200px;background-color:darkseagreen}
+        80%{top:0px;left:200px;background-color:violet}
+        100%{top:250px;left:200px;background-color:firebrick}
+        }
+        div.A{
+            animation-name:A;            
+        }
+        @keyframes A {
+        0% {top:0px;left:125px;}
+        20%{top:250px;left:50px;background-color:orchid}
+        40%{top:125px;left:100px;background-color:royalblue}
+        60%{top:125px;left:150px;background-color:darkseagreen}
+        80%{top:0px;left:125px;background-color:violet}
+        100%{top:250px;left:200px;background-color:firebrick}
+        }
+        div.R{
+            animation-name:R;            
+        }
+        @keyframes R {
+        0% {top:250px;left:50px;}
+        20%{top:0px;left:50px;background-color:orchid}
+        40%{top:0px;left:200px;background-color:royalblue}
+        60%{top:125px;left:200px;background-color:darkseagreen}
+        80%{top:125px;left:50px;background-color:violet}
+        100%{top:250px;left:200px;background-color:firebrick}
+        }
+        div.I{
+            animation-name:I;            
+        }
+        @keyframes I {
+        0% {top:0px;left:50px;}
+        20%{top:0px;left:200px;background-color:orchid}
+        40%{top:0px;left:125px;background-color:royalblue}
+        60%{top:250px;left:125px;background-color:darkseagreen}
+        80%{top:250px;left:50px;background-color:violet}
+        100%{top:250px;left:200px;background-color:firebrick}
+        }
+        div.S{
+            animation-name:S;            
+        }
+        @keyframes S {
+        0% {top:0px;left:200px;}
+        20%{top:0px;left:50px;background-color:orchid}
+        40%{top:125px;left:50px;background-color:royalblue}
+        60%{top:125px;left:200px;background-color:darkseagreen}
+        80%{top:250px;left:200px;background-color:violet}
+        100%{top:250px;left:50px;background-color:firebrick}
+        }
+        </style>
+    </head>
+    <body>
+            <div class="B1">
+                <div class="H">
+                </div>
+            </div>
+        <div class="B2">
+            <div class="A">
+            </div>
+        </div>
+        <div class="B3">
+            <div class="R">
+            </div>
+        </div>
+    <br>
+        <div class="B4">
+                <div class="I">
+                </div>
+        </div>
+        <div class="B5">
+                <div class="S">
+                </div>    
+        </div>
+        <div class="B6">
+                <div class="H">
+                </div>
+        </div>
+    </ul>
+    </body>
+</html>
