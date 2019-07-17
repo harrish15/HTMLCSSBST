@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 7</title>
+    </head>
+    <style>
+        div.Left{
+              float : left;
+              margin-left: 0px;
+              width:112px;
+              height:140px;
+              background-image: url('./img/running-sprite-sheet-png-1_left2right.png');
+              animation: LeftArrow 3s steps(8) 0s infinite;
+        }
+        @keyframes LeftArrow {
+              0%{background-position: 0px}
+              100%{
+                margin-left : 47.5%;
+                background-position: -864px;
+                }
+        }
+        div.Right{ 
+              float : right;
+              width:108px;
+              height:140px;
+              background-image: url('./img/running-sprite-sheet-png-1_right2left.png');
+              animation: RightArrow 3s steps(8) 0s infinite;
+        }
+        @keyframes RightArrow {
+              0%{background-position: 864px}
+              100%{margin-right : 47.5%; background-position: 0px;}
+        }
+        body.Boom{
+            width : 100%;
+            height: 100%;
+            animation: Boom 1s ease-in-out 2.4s infinite;            
+        }
+        @keyframes Boom {
+            0%{visibility: hidden;}
+            100%{visibility:visible;background-image: url('./img/boom.gif');}
+        }
+    </style>
+    <body class = "Boom">
+        <div class = "Left"></div>
+        <div class = "Right"></div>
+    </body>
+</html>
